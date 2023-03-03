@@ -101,7 +101,7 @@ body {
 /* Home Page */
 
 #hero {
-    background-image: url(/home/rono/dorper/images/savanah.jpeg);
+    background-image: url(/home/rono/dorper/images/logo.jpg);
     height: 70vh;
     width: 100%;
     background-size: cover;
@@ -138,13 +138,15 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-image: url(/home/rono/dorper/images/feature-bg.jpeg);
+    background-size: cover;
 }
 
 #feature .fe-box { 
-    width: 180px;
+    width: 400px;
     text-align: center;
     padding: 25px 15px;
-    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    box-shadow: 200px 200px 250px rgba(0, 0, 0, 0.03);
     border: 1px solid #cce7d0;
     border-radius: 4px;
     margin: 15px 0;
