@@ -460,6 +460,7 @@ footer p {
 footer a {
     font-size: 13px;
     padding-bottom: 20px;
+    text-decoration: none;
 }
 
 footer .follow {
@@ -510,6 +511,23 @@ footer .copyright {
     color: #ede7f1;
 }
 
+#pagination{
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i {
+    font-size: 16px;
+    font-weight: 600;
+}
 /* Single Product */
 
 /* Blog Page */
