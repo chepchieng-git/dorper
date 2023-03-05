@@ -34,38 +34,108 @@
             <img src="images/sproducts/sp1.jpeg" width="100%" id="MainImg" alt="">
             <div class="small-img-group">
                 <div class="small-img-col">
-                    <img src="images/sproducts/sp2.jpeg" width="100%" class="small-img" alt="">
+                    <img src="images/sproducts/sp1.jpeg" width="100%" class="small-img" alt="">
                 </div>
-                <div>
+                <div class="small-img-col">
+                    <img src="images/sproducts/sp2.jpeg" width="100%" class="small-img" alt="">
+                </div>  
+                <div class="small-img-col">
                     <img src="images/sproducts/sp3.jpeg" width="100%" class="small-img" alt="">
                 </div>  
-                <div>
-                    <img src="images/sproducts/sp4.jpeg" width="100%" class="small-img" alt="">
-                </div>  
-                <div>     
-                    <img src="images/sproducts/sp5.jpeg" width="100%" class="small-img" alt="">
+                <div class="small-img-col">
+                    <img src="images/sproducts/sp3.jpeg" width="100%" class="small-img" alt="">
                 </div>
             </div>
         </div>
 
-        <div class="single-pro-details"></div>
-        <h6>Home | Sheep</h6>
-        <h4>Pure Dorpers</h4>
-        <h2>Ksh. 20,000</h2>
-        <select name="" id="">
-            <option>Select Type</option>
-            <option>Ram</option>
-            <option>Ewes</option>
-        </select>
-        <input type="number" value="1">
-        <button>Add To Cart</button>
-        <h4>Product Details </h4>
-        <span>
-        We breed, market and sell high quality breeding stock to farmers across the country. We also train farmers in dorper sheep and galla goats management. 
-        Our genetics are medium framed meaty sheep, well balanced, with great bone structure, which thrive in any east African conditions especially in small holder households.
-        </span>
-
+        <div class="single-pro-details">
+            <h6>Home | Sheep</h6>
+            <h4>Pure Dorpers</h4>
+            <h2>Ksh. 20,000</h2>
+            <select name="" id="">
+                <option>Select Type</option>
+                <option>Ram</option>
+                <option>Ewes</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add To Cart</button>
+            <h4>Product Details </h4>
+            <span>
+            We breed, market and sell high quality breeding stock to farmers across the country. We also train farmers in dorper sheep and galla goats management. 
+            Our genetics are medium framed meaty sheep, well balanced, with great bone structure, which thrive in any east African conditions especially in small holder households.
+            </span>
+        </div>
     </section>
+
+<section id="product1" class="section-p1">
+    <p>Featured Products</p>
+    <p>The World Changes Fast and so do We</p>
+    <div class="pro-container">
+        <div class="pro">
+            <img src="images/new-ventures/n0.jpeg" alt="">
+            <div class="des">
+                <span>Feeder</span>
+                <h5>Sheep Feeder | Famco Manufacturing</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Sh. 10000</h4>
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+            <img src="images/new-ventures/n1.jpeg" alt="">
+            <div class="des">
+                <span>Feeder</span>
+                <h5>A Frame Grain Feeder | Ketcham's Sheep Equipment</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Sh. 10000</h4>
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+        </div>      
+        <div class="pro">
+            <img src="images/new-ventures/n2.jpeg" alt="">
+            <div class="des">
+                <span>Feeder</span>
+                <h5>Sheep Feeders and Handling | Mackins Animal Feeds</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Sh. 10000</h4>
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+        </div>            
+        <div class="pro">
+            <img src="images/new-ventures/n3.jpeg" alt="">
+            <div class="des">
+                <span>Feeder</span>
+                <h5>Lamb Creep Feeder | O'Donovan Engineering</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Sh. 10000</h4>
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+        </div>                      
+</section>
 
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
@@ -130,6 +200,25 @@
         <p>@2023. Dorper's World</p>
     </div>
     </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+
     <script src="script.js"></script>
     
 </body>
